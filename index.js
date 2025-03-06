@@ -13,6 +13,6 @@ http.createServer((req, res) => {
     const queryObject = url.parse(req.url, true).query;
     const target = queryObject.target || 'https://minecraft-server-list.com';
     proxy.web(req, res, { target });
-}).listen(8080, () => {
-    console.log('Proxy server running on port 8080');
+}).listen(8191, () => {
+    console.log('Proxy server running on port 8191');
 });
